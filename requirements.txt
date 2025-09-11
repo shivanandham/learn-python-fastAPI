@@ -1,0 +1,33 @@
+# Python Learning Roadmap - Requirements
+# Install with: pip install -r requirements.txt
+
+# Core Jupyter dependencies
+jupyter>=1.0.0
+ipython>=8.0.0
+nbformat>=5.0.0
+
+# Enhanced notebook experience
+jupyterlab>=3.0.0
+ipywidgets>=7.0.0
+
+# Development and testing
+pytest>=6.0.0
+
+# Rich terminal output
+rich>=10.0.0
+
+# Data analysis (for later modules)
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Web APIs (for later modules)
+fastapi>=0.68.0
+uvicorn>=0.15.0
+
+# Database (for later modules)
+sqlalchemy>=1.4.0
+alembic>=1.7.0
+
+# Data visualization (for later modules)
+matplotlib>=3.4.0
+plotly>=5.0.0
