@@ -1,51 +1,72 @@
 # Python Learning Roadmap - Setup Guide
 
-## 🚀 Quick Start
+## 🚀 Quick Setup (Recommended)
 
 ### 1. Install Dependencies
-
 ```bash
 # Install all required packages
 pip install -r requirements.txt
-
-# Or install core dependencies manually
-pip install jupyter ipython nbformat
 ```
 
 ### 2. Start Learning
-
 ```bash
-# Start Jupyter Notebook
-jupyter notebook
+# Start Jupyter Lab
+jupyter lab
 
-# Or start JupyterLab (recommended)
+# Navigate to: modules/module_1_python_fundamentals/topic_01_variables/
+# Begin with explanation.ipynb
+```
+
+That's it! You're ready to start learning.
+
+## 🔧 Detailed Setup (Optional)
+
+### Option 1: Automated Setup
+```bash
+# Run the setup script
+python setup_learning_environment.py
+```
+
+### Option 2: Manual Setup
+```bash
+# Create virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Start Jupyter Lab
 jupyter lab
 ```
 
-### 3. Navigate to Module 1
-
-Open `modules/module_1_python_fundamentals/README.ipynb` and follow the learning path!
-
 ## 📚 Learning Structure
 
-Each module follows this structure:
-- **📖 explanation.ipynb** - Learn concepts
-- **✏️ exercise.ipynb** - Practice with exercises
-- **✅ validation.ipynb** - Check your work
-- **💡 solution.ipynb** - See solutions (only if needed!)
+Each topic follows this structure:
+- **📖 explanation.ipynb** - Learn concepts with examples
+- **✏️ exercise.ipynb** - Practice with hands-on exercises
+- **✅ solution.ipynb** - Check your work (only if needed!)
+
+## 🎯 First Steps
+
+1. **Start with Module 1**: `modules/module_1_python_fundamentals/topic_01_variables/`
+2. **Read the explanation**: Open `explanation.ipynb`
+3. **Complete exercises**: Open `exercise.ipynb`
+4. **Check solutions**: Open `solution.ipynb` only if you get stuck
 
 ## 🔧 Troubleshooting
 
 ### Common Issues
 
-#### "ModuleNotFoundError: No module named 'nbformat'"
+#### "ModuleNotFoundError: No module named 'jupyter'"
 ```bash
-pip install nbformat
+pip install jupyter jupyterlab
 ```
 
-#### Validation can't find your functions
-- Make sure you've run all function definition cells in the exercise notebook first
-- The validation uses `%run` magic to import functions from exercise notebooks
+#### "ModuleNotFoundError: No module named 'sqlalchemy'"
+```bash
+pip install sqlalchemy
+```
 
 #### Jupyter won't start
 ```bash
@@ -54,11 +75,15 @@ pip install jupyterlab
 jupyter lab
 ```
 
+#### Validation can't find your functions
+- Make sure you've run all function definition cells in the exercise notebook first
+- The validation uses the global namespace to check your work
+
 ## 📖 Additional Resources
 
 - [Python Documentation](https://docs.python.org/3/)
-- [Jupyter Notebook Documentation](https://jupyter-notebook.readthedocs.io/)
-- [JupyterLab Documentation](https://jupyterlab.readthedocs.io/)
+- [Jupyter Lab Documentation](https://jupyterlab.readthedocs.io/)
+- [SQLAlchemy Documentation](https://docs.sqlalchemy.org/)
 
 ## 🎯 Learning Path
 
@@ -70,4 +95,14 @@ jupyter lab
 6. **Module 6**: Building Data APIs with FastAPI
 7. **Module 7**: Interactive Console/REPL
 8. **Module 8**: Database Performance and Optimization
-9. **Module 9**: Complete Data Application Project
+9. **Module 9**: Data Analysis with Pandas
+10. **Module 10**: Complete Data Application Project
+
+## 🆘 Need Help?
+
+1. **Check the notebook exercises** - Each has hints and solutions
+2. **Read the documentation** - Comprehensive guides in each module
+3. **Practice regularly** - Consistency is key to learning
+4. **Experiment** - Try variations of the exercises
+
+Happy learning! 🐍✨

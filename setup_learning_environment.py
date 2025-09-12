@@ -107,22 +107,36 @@ def display_next_steps():
     """Display next steps for the user"""
     print("\n🎉 Setup completed successfully!")
     print("\n📚 Next Steps:")
-    print("1. Update your .env file with Linear API credentials")
-    print("2. Run 'jupyter notebook' to start learning")
-    print("3. Navigate to modules/module_1_python_fundamentals/ to begin")
+    print("1. Run 'jupyter lab' to start learning")
+    print(
+        "2. Navigate to modules/module_1_python_fundamentals/topic_01_variables/ to begin"
+    )
+    print("3. Start with explanation.ipynb, then exercise.ipynb")
     print("4. Follow the exercises in each notebook")
-    print("5. Track your progress in Linear")
+    print("5. Track your progress (optional: use Linear integration)")
 
     print("\n🔗 Useful Commands:")
-    print("- Start Jupyter: jupyter notebook")
+    print("- Start Jupyter Lab: jupyter lab")
+    print("- Start Jupyter Notebook: jupyter notebook")
     print(
         "- Run FastAPI: uvicorn modules.module_6_fastapi_apis.fastapi_apis:app --reload"
     )
-    print("- Create Linear roadmap: python linear_integration/roadmap_manager.py")
+    print("- Create Linear roadmap: python create_roadmap.py")
 
     print("\n📖 Learning Path:")
     print(
-        "Module 1 → Module 2 → Module 3 → Module 4 → Module 5 → Module 6 → Module 7 → Module 8 → Module 9 → Module 10"
+        "Module 1 (Python Fundamentals) → Module 2 (Advanced Features) → Module 3 (Database Design)"
+    )
+    print(
+        "→ Module 4 (SQLAlchemy Fundamentals) → Module 5 (SQLAlchemy Advanced) → Module 6 (FastAPI)"
+    )
+    print(
+        "→ Module 7 (Interactive Console) → Module 8 (Performance) → Module 9 (Data Analysis) → Module 10 (Complete Project)"
+    )
+
+    print("\n🎯 First Exercise:")
+    print(
+        "Open: modules/module_1_python_fundamentals/topic_01_variables/explanation.ipynb"
     )
 
 
